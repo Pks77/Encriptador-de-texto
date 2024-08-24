@@ -10,23 +10,30 @@
 </head>
 <body>
     <header></header>
-    <main>
-        <h1>Encriptador de texto</h1>
-            <article>
-                <div>
-                    <input type="text" value="Ningún mensaje fue encontrado" readonly>
-                    <p>Solo letras minúsculas y sin acentos</p>
-                    <button>Encriptar</button>
-                    <button>Desencriptar</button>
+
+    <main class="main">
+        <h1 class="main_title">Encriptador de texto</h1>
+            <div class="container">
+                <div class="container_principal">
+                    <div class="container_encriptar">
+                        <input type="text" name="nombre" placeholder="Ingrese el texto aquí" class="style_input">
+                        <p>Solo letras minúsculas y sin acentos</p>
+                        <div class="presentacion_botones">
+                            <button class="container_boton">Encriptar</button>
+                            <button class="container_boton">Desencriptar</button>
+                        </div>
+                    </div>
                 </div>
-            </article>
-            <article>
-                <div>
-                    <input type="text" name="nombre" placeholder="Ingrese el texto aquí">
+                <div class="container_secundario">
+                    <div class="container_desencriptar">                    
+                        <input type="text" value="Ningún mensaje fue encontrado" readonly class="style_input">
+                        <button class="container_boton">Copiar</button>
+                    </div>
                 </div>
-            </article>
+            </div>
     </main>
-    <footer>
+
+    <footer class="footer">
         <p>&copy; 2024 Juan David Cardozo Jimenez. Todos los derechos reservados.</p>
         <p>Diseñado y desarrollado por Juan David Cardozo Jimenez.</p>
     </footer>    
