@@ -9,23 +9,23 @@ html {
 }
 
 :root {
-    --amarillo-claro: #0C2D57;
-    --verde-claro: #FC6736;
-    --verde-intenso: #FFB0B0;
-    --verde-azulado: #EFECEC;
+    --amarillo-claro: #0F0F0F;
+    --verde-claro: #232D3F; 
+    --verde-intenso: #005B41;
+    --verde-azulado: #008170;
 }
 
 body {
     font-family: "Raleway", sans-serif;
-    background-color: var(--amarillo-claro); /* Fondo principal de la página */
+    background-color: var(--amarillo-claro); 
 }
 
 .bg-header {
-    background-image: url('../assets/pexels-alexant-4585185.jpg');
+    background-image: url('../assets/img/pexels-alexant-4585185.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    border-bottom: 0.3em solid var(--verde-intenso); /* Usa verde intenso para el borde */
+    border-bottom: 0.3em solid var(--verde-intenso); 
 }
 
 .container {
@@ -37,7 +37,7 @@ body {
 
 .main {
     margin-top: -2rem;
-    border: 0.3em solid var(--verde-intenso); /* Usa verde intenso para el borde */
+    border: 0.3em solid var(--verde-intenso); 
     background-color: var(--verde-claro);
     border-radius: 2em;
     width: 80%;
@@ -52,7 +52,7 @@ body {
 
 .main_title {
     text-transform: uppercase;
-    color: var(--verde-azulado); /* Usa verde azulado para el texto del título */
+    color: #FFEA20; 
 }
 
 .container {
@@ -69,12 +69,12 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    border: 0.3em solid var(--verde-intenso); /* Usa verde intenso para el borde */
+    border: 0.3em solid #FFEA20; 
     border-radius: 2em;
     margin-bottom: 1em;
     height: 25em;
     width: 25em;    
-    background-color: var(--amarillo-claro); /* Fondo de la caja de encriptar */
+    background-color: var(--amarillo-claro); 
 }
 
 .container_encriptar {
@@ -94,26 +94,29 @@ body {
 }
 
 .style_textarea {
-    display: block; /* Mejor para elementos de bloque como textarea */
+    display: block; 
     box-sizing: border-box;
     width: 100%;
     border-style: none;
-    height: 15em;
+    height: 10em;
     background-color: transparent;
+    color:var(--verde-intenso);
     outline: none;
     overflow-wrap: break-word;
     resize: none;
-    white-space: pre-wrap; /* Permite que el texto salte de línea */
+    white-space: pre-wrap; 
 }
 
-input[readonly] {
-    background-color: transparent;
-    border-style: none;
-    outline: none;
-    height: 15em;
-    width: 100%;
+.style_mensaje{
+    display: block; 
     box-sizing: border-box;
-    color: var(--verde-azulado); /* Usa verde azulado para el texto en input readonly */
+    width: 100%;
+    border-style: none;
+    height: 10em;
+    background-color: transparent;
+    color:var(--verde-intenso);
+    outline: none;
+    resize: none;
 }
 
 .container_boton {
@@ -123,12 +126,25 @@ input[readonly] {
     font-size: 1em;
     font-weight: 700;
     border: none;
-    background-color: var(--verde-intenso); /* Fondo del botón */
-    color: white; /* Texto del botón */
+    background-color: var(--verde-intenso); 
+    color: var(--amarillo-claro); 
 }
 
-.informativos {
-    font-size: 0.7em;
+button:hover{
+    background-color: #FFEA20;
+    color: var(--verde-claro);
+}
+
+.informativo {
+    color: var(--verde-intenso);
+    margin: 0;
+}
+
+.icono {
+    width: 1.5em; 
+    height: auto;
+    margin-right: 0.5em;
+    vertical-align: middle;
 }
 
 .container_secundario {
@@ -136,12 +152,12 @@ input[readonly] {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    border: 0.3em solid var(--verde-intenso); /* Usa verde intenso para el borde */
+    border: 0.3em solid #FFEA20; 
     border-radius: 2em;
     margin-bottom: 1em;
     height: 25em;
     width: 25em;    
-    background-color: var(--amarillo-claro); /* Fondo de la caja de desencriptar */
+    background-color: var(--amarillo-claro); 
 }
 
 .container_desencriptar {
@@ -155,7 +171,7 @@ input[readonly] {
 }
 
 .footer {
-    background-image: url('../assets/pexels-alexant-4585185.jpg');
+    background-image: url('../assets/img/pexels-alexant-4585185.jpg');
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
@@ -164,10 +180,49 @@ input[readonly] {
     position: relative;
     margin: 0;
     z-index: 1;
-    border-top: 0.3em solid var(--verde-intenso); /* Usa verde intenso para el borde */
+    border-top: 0.3em solid #FFEA20;
 }
 
 .footer p {
     text-align: center;
-    color: var(--verde-azulado); /* Usa verde azulado para el texto del footer */
+    color: var(--verde-azulado); 
+}
+
+@media (max-width: 800px) {
+    * {
+        flex-direction: column;
+        margin: 0;
+        text-align: center;
+        padding: 0;
+    }
+
+    .page-title {
+        font-size: 1rem;
+    }
+
+    body, .main {
+        margin: 0;
+        padding: 0;
+    }
+
+    .main {
+        margin: 0 auto; /* Centra el contenedor horizontalmente */
+        padding: 0 1rem; /* Añade un poco de espacio a los lados */
+        width: 100%; /* Ocupa el ancho total de la pantalla */
+        max-width: 1280px; /* Limita el ancho máximo */
+    }
+
+    .container_principal, .container_secundario {
+        height: auto; /* Deja que la altura se ajuste automáticamente */
+        width: 100vw;  /* Ocupa todo el ancho disponible, incluyendo posibles márgenes */
+        margin: 0; /* Elimina el margen para ocupar todo el ancho */
+        padding: 0; /* Elimina padding para asegurar que ocupe todo el ancho */
+    }
+
+    .icono {
+        width: 0.5em; 
+        height: auto;
+        margin-right: 0.5em;
+        vertical-align: middle;
+    }
 }
