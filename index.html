@@ -5,19 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Encriptador de texto</title>
-    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
     
 </head>
 <body>
-    <header></header>
+    
+    <header class="bg-header">
+            <div class="container">
+                <div>
+                    <h1 class="main_title">Encriptador de texto</h1>
+                </div>
+            </div>
+    </header>
 
     <main class="main">
-        <h1 class="main_title">Encriptador de texto</h1>
             <div class="container">
                 <div class="container_principal">
                     <div class="container_encriptar">
-                        <input type="text" name="nombre" placeholder="Ingrese el texto aquí" class="style_input">
-                        <p>Solo letras minúsculas y sin acentos</p>
+                        <textarea class="style_textarea" placeholder="Ingrese el texto aquí" maxlength="200"></textarea>
+                        <div class="informativos">
+                            <p>Solo letras minúsculas y sin acentos</p>
+                            <p>No usar carácteres especiales</p>
+                        </div>
                         <div class="presentacion_botones">
                             <button class="container_boton">Encriptar</button>
                             <button class="container_boton">Desencriptar</button>
@@ -25,9 +40,11 @@
                     </div>
                 </div>
                 <div class="container_secundario">
-                    <div class="container_desencriptar">                    
-                        <input type="text" value="Ningún mensaje fue encontrado" readonly class="style_input">
-                        <button class="container_boton">Copiar</button>
+                    <div class="container_desencriptar">      
+                        <input type="text" value="Ningún mensaje fue encontrado..." readonly>
+                        <div class="presentacion_botones">
+                            <button class="container_boton">Copiar</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -35,7 +52,7 @@
 
     <footer class="footer">
         <p>&copy; 2024 Juan David Cardozo Jimenez. Todos los derechos reservados.</p>
-        <p>Diseñado y desarrollado por Juan David Cardozo Jimenez.</p>
+        <p>Diseñado y desarrollado por Juan David Cardozo Jimenez</p>
     </footer>    
 </body>
 </html>

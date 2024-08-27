@@ -1,0 +1,173 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+:root {
+    --amarillo-claro: #0C2D57;
+    --verde-claro: #FC6736;
+    --verde-intenso: #FFB0B0;
+    --verde-azulado: #EFECEC;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    background-color: var(--amarillo-claro); /* Fondo principal de la página */
+}
+
+.bg-header {
+    background-image: url('../assets/pexels-alexant-4585185.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-bottom: 0.3em solid var(--verde-intenso); /* Usa verde intenso para el borde */
+}
+
+.container {
+    width: 80%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main {
+    margin-top: -2rem;
+    border: 0.3em solid var(--verde-intenso); /* Usa verde intenso para el borde */
+    background-color: var(--verde-claro);
+    border-radius: 2em;
+    width: 80%;
+    max-width: 1280px;
+    min-height: calc(100vh - altura-del-footer);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -2rem;
+    position: relative;
+    z-index: 2;
+}
+
+.main_title {
+    text-transform: uppercase;
+    color: var(--verde-azulado); /* Usa verde azulado para el texto del título */
+}
+
+.container {
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    border-radius: 1em;
+    padding: 1em;
+}
+
+.container_principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 0.3em solid var(--verde-intenso); /* Usa verde intenso para el borde */
+    border-radius: 2em;
+    margin-bottom: 1em;
+    height: 25em;
+    width: 25em;    
+    background-color: var(--amarillo-claro); /* Fondo de la caja de encriptar */
+}
+
+.container_encriptar {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 0.5em;
+    margin-bottom: 1em;
+    text-align: center;
+    padding: 1em;
+}
+
+.presentacion_botones {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.style_textarea {
+    display: block; /* Mejor para elementos de bloque como textarea */
+    box-sizing: border-box;
+    width: 100%;
+    border-style: none;
+    height: 15em;
+    background-color: transparent;
+    outline: none;
+    overflow-wrap: break-word;
+    resize: none;
+    white-space: pre-wrap; /* Permite que el texto salte de línea */
+}
+
+input[readonly] {
+    background-color: transparent;
+    border-style: none;
+    outline: none;
+    height: 15em;
+    width: 100%;
+    box-sizing: border-box;
+    color: var(--verde-azulado); /* Usa verde azulado para el texto en input readonly */
+}
+
+.container_boton {
+    border-radius: 1em;
+    padding: 1em 1em;
+    width: 100%;
+    font-size: 1em;
+    font-weight: 700;
+    border: none;
+    background-color: var(--verde-intenso); /* Fondo del botón */
+    color: white; /* Texto del botón */
+}
+
+.informativos {
+    font-size: 0.7em;
+}
+
+.container_secundario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 0.3em solid var(--verde-intenso); /* Usa verde intenso para el borde */
+    border-radius: 2em;
+    margin-bottom: 1em;
+    height: 25em;
+    width: 25em;    
+    background-color: var(--amarillo-claro); /* Fondo de la caja de desencriptar */
+}
+
+.container_desencriptar {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 2em;
+    overflow: hidden;
+    border-radius: 0.5em;
+    margin-bottom: 1em;
+}
+
+.footer {
+    background-image: url('../assets/pexels-alexant-4585185.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+    position: relative;
+    margin: 0;
+    z-index: 1;
+    border-top: 0.3em solid var(--verde-intenso); /* Usa verde intenso para el borde */
+}
+
+.footer p {
+    text-align: center;
+    color: var(--verde-azulado); /* Usa verde azulado para el texto del footer */
+}
