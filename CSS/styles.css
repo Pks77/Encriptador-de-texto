@@ -206,17 +206,17 @@ button:hover{
     }
 
     .main {
-        margin: 0 auto; /* Centra el contenedor horizontalmente */
-        padding: 0 1rem; /* Añade un poco de espacio a los lados */
-        width: 100%; /* Ocupa el ancho total de la pantalla */
-        max-width: 1280px; /* Limita el ancho máximo */
+        margin: 0 auto;
+        padding: 0 1rem; 
+        width: 100%; 
+        max-width: 1280px; 
     }
 
     .container_principal, .container_secundario {
-        height: auto; /* Deja que la altura se ajuste automáticamente */
-        width: 100vw;  /* Ocupa todo el ancho disponible, incluyendo posibles márgenes */
-        margin: 0; /* Elimina el margen para ocupar todo el ancho */
-        padding: 0; /* Elimina padding para asegurar que ocupe todo el ancho */
+        height: auto; 
+        width: 100vw;  
+        margin: 0; 
+        padding: 0; 
     }
 
     .icono {
